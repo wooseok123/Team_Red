@@ -1,5 +1,5 @@
 /* Global */
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -67,7 +67,7 @@ a:hover {
   height: 100%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: default;
   margin: 0px;
   height: 100%;
@@ -81,6 +81,11 @@ header {
 #navContainer {
   display: flex;
   align-items: center;
+}
+
+#nav_Logo {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .contents {
@@ -253,6 +258,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .sign_wrap {
