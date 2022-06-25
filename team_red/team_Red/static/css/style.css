@@ -247,3 +247,10 @@ button {
   width: 200px;
   height: 200px;
 }
+
+.sign_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
