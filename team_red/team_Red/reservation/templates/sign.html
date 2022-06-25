@@ -26,28 +26,32 @@
           </div>
         </nav>
       </header>
-      <main class="contents">
-        <section class="mainContainer">
-          <div class="inputConatiner">
-            <div class="mainInput">
-              <h2>지금 바로 눌러 예약하세요</h2>
-              <div class="reservation">
-                <a href="reservation.html"
-                ><button type="text" placeholder="예약하세요!">예약하기
-              </a>
-              </div>
-              <div class="signLogin" style="display:inline;">
-                  <a class="modal_btn">로그인</a>
-                  <p style="display:inline ;">또는</p>
-                  <a href="sign.html">회원가입</a>
-              </div>
-            </div>
-            <div class="inputImg">
-              <img src="../../static/img/logo.png" alt="" />
-            </div>
-
+      <main>
+        <div class="sign_wrap">
+          <div class="sign_container">
+            <h1>로그인</h1>
+            <form action="" class="user" method="POST">
+              {% csrf_token %}
+              <input
+                type="text"
+                class="form-control form-control-user"
+                id="username"
+                name="username"
+                placeholder="아이디"
+                required
+              />
+              <input
+                type="password"
+                class="form-control form-control-user"
+                id="password"
+                name="password"
+                placeholder="비밀번호"
+                required
+              />
+            </form>
+            <button type="submit" value="login!">로그인</button>
           </div>
-        </section>
+        </div>
       </main>
     </div>
     <script src="../../static/js/app.js"></script>
