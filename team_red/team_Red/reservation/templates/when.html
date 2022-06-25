@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,6 +27,11 @@
           </div>
         </nav>
       </header>
+      <form method="post">
+        {% csrf_token %}
+        <p><input type="date" name="end_date"></p>
+        <p><input type="submit" value="Submit"></p>
+      </form>
     </div>
     <script src="{% static 'js/app.js' %}"></script>
   </body>
