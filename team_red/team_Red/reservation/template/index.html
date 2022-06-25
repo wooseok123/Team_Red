@@ -13,7 +13,7 @@
         <nav>
           <div id="navContainer">
             <div id="nav_Logo">
-              <img src="../static/logo.png" alt="logo" width="50px" height="50px" /> <!-- TODO -->
+              <img src="src/logo.png" alt="logo" width="50px" height="50px" />
             </div>
             <div id="nav_name">
               <h1>체크</h1>
@@ -26,10 +26,16 @@
           <div class="inputConatiner">
             <div class="mainInput">
               <h2>지금 바로 눌러 예약하세요</h2>
-              <a href="reservation.html"
-                ><button type="text" placeholder="예약하세요!">예약하기</a>
-                    <a href="login.html">로그인</a>
-                    <a href="sign.html"></a>  
+              <div class="reservation">
+                <a href="reservation.html"
+                ><button type="text" placeholder="예약하세요!">예약하기
+              </a>
+              </div>
+              <div class="signLogin" style="display:inline;">
+                  <a class="modal_btn">로그인</a>
+                  <p style="display:inline ;">또는</p>
+                  <a href="sign.html">회원가입</a>
+              </div>
             </div>
             <div class="inputImg">
               <img src="src/logo.png" alt="" />
@@ -37,7 +43,6 @@
 
           </div>
         </section>
-        <button class="modal_btn">로그인</button>
       </main>
       <section id="modal">
         <div class="modal_wrap">
@@ -47,9 +52,9 @@
                 <input type="text" placeholder="아이디" required>
                 <input type="password" placeholder="비밀번호" required>
               </form>
-                
+              <button class="close_btn" type="submit">로그인</button>
             </div>
-                <button class="close_btn">로그인</button>
+
         </div>
     </section>
       <footer>
