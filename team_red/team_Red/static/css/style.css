@@ -1,5 +1,5 @@
 /* Global */
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -67,7 +67,7 @@ a:hover {
   height: 100%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: default;
   margin: 0px;
   height: 100%;
@@ -81,6 +81,11 @@ header {
 #navContainer {
   display: flex;
   align-items: center;
+}
+
+#nav_Logo {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .contents {
@@ -122,13 +127,13 @@ input {
   width: 70%;
 }
 
-.reservation {
+#container {
+  text-align: center;
 }
 
 button {
-  font-size: 4vw;
+  font-size: 3vw;
   width: 400px;
-  height: 100%;
   text-align: center;
   border: 0;
   border-radius: 20px;
@@ -246,4 +251,37 @@ button {
   position: absolute;
   width: 200px;
   height: 200px;
+}
+
+.sign_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign_wrap {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+}
+
+.signBtn {
+  width: 70%;
+}
+
+#reservationEnd {
+  margin: 0 auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
