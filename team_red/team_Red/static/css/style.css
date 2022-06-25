@@ -64,7 +64,7 @@ a:hover {
 }
 
 #container {
-  height: 100%;
+  background-image: url(../../static/img/bg.jpg);
 }
 body {
   font-family: "Noto Sans KR", sans-serif;
@@ -75,21 +75,19 @@ body {
 
 header {
   width: 100%;
-  background-color: #fff7d1;
 }
 
 #navContainer {
+  margin-left: 20px;
   display: flex;
   align-items: center;
 }
 
 #nav_Logo {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .contents {
-  height: 70%;
+  height: 100%;
 }
 
 .mainContainer {
@@ -97,7 +95,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 80%;
   text-align: center;
 }
 
