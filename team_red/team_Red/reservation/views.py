@@ -1,13 +1,23 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from .models import Reservation
 from .forms import ReservationForm
+from django.contrib import auth
+from django.contrib.auth.models import User
 
 # Create your views here.
 # 메인 페이지
 def mainpage(request):
     # TODO
     if request.method == "POST":
-        return redirect('choose_place')
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = auth.authenticate(request, username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            return redirect('choose_place')
+        else: 
+            return redirect('index')
+            # return render(request, 'bad_login.html')
     else:
         return render(request, 'index.html')
 
