@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../static/css/style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <nav>
+        <div id="navContainer">
+          <div id="nav_Logo">
+            <img src="../../static/img/logo.png" alt="logo" width="50px" height="50px" />
+          </div>
+          <div id="nav_name">
+            <h1>체크</h1>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="sign_wrap">
+        <div class="sign_container">
+          <h1>회원가입</h1>
+          <form action="" class="user" method="POST">
+            <input type="text" class="form-control form-control-user" id="password" name="password" placeholder="이름"
+              required />
+            <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="아이디"
+              required />
+            <input type="password" class="form-control form-control-user" id="password" name="password"
+              placeholder="비밀번호" required />
+            <input type="password" class="form-control form-control-user" id="repeat" name="repeat" placeholder="비밀번호확인"
+              required />
+            <input type="tel" class="form-control form-control-user" id="phone" name="phone" placeholder="핸드폰 번호"
+              required />
+          </form>
+          <a href="{% url 'reservation' %}">
+            <button type="submit" value="login" class="signBtn">
+              회원가입
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../../static/js/app.js"></script>
+</body>
+
+</html>

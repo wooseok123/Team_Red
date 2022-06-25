@@ -20,7 +20,8 @@ from reservation import views as res_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', res_views.mainpage),
-    path('reservation/', res_views.choose_place),
-    path('reservation/date', res_views.choose_date),
-    path('reservation/done', res_views.reservation_done),
+    path('signup/', res_views.signup, name='register'),
+    path('reservation/', res_views.choose_place, name='reservation'),
+    path('reservation/date', res_views.choose_date, name='reser_date'),
+    path('reservation/done', res_views.reservation_done, name='reser_done'),
 ]
