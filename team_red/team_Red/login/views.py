@@ -15,7 +15,7 @@ def login(request):
             return redirect('index')
             # return render(request, 'bad_login.html')
     else:
-        return render(request, 'login.html')
+        return render(request, 'index.html')
 
 # def logout(request):
 #     auth.logout(request)
