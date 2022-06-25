@@ -24,45 +24,57 @@
               <h1>LAIN</h1>
             </div>
           </div>
-        </nav>
-      </header>
-      <main class="photos">
-        <div class="photo_container">
-          <div class="photo_title">
-            <h2>가고 싶은 장소를 클릭해주세요</h2>
+          <div id="nav_name">
+            <h1>체크</h1>
           </div>
-          <div class="photoCon_container">
-            <div class="photo_con">
-              <img class="photo_img" src="../../static/img/CW.jpg" alt="" />
-              <div class="photo_des">
-                <h3>청와대</h3>
-                <p>서울특별시 종로구 청와대로 1</p>
-              </div>
-              <div class="black"></div>
-            </div>
-            <div class="photo_con">
-              <img class="photo_img" src="../../static/img/GB.jpg" alt="" />
-              <div class="photo_des">
-                <h3>경복궁</h3>
-                <p>서울특별시 종로구 사직로 161</p></p>
-              </div>
-              <div class="black"></div>
-            </div>
-            <div class="photo_con">
-              <img class="photo_img" src="../../static/img/SAN.jpg" alt="" />
-              <div class="photo_des">
-                <h3>무슨산</h3>
-                <p>어디여ㅋㅋ</p>
-              </div>
-              <div class="black"></div>
-            </div>
-          </div>
-          
         </div>
-      </main>
+      </nav>
+    </header>
+    <main class="photos">
+      <div class="photo_container">
+        <div class="photo_title">
+          <h2>가고 싶은 장소를 클릭해주세요</h2>
+        </div>
+        <div class="photoCon_container">
+          <div class="photo_con">
+            <a href="{% url 'reser_date' %}">
+            <img class="photo_img" src="../../static/img/CW.jpg" alt="" />
+            </a>
+            <div class="photo_des">
+              <h3>청와대</h3>
+              <p>서울특별시 종로구 청와대로 1</p>
+            </div>
+            <div class="black"></div>
+          </div>
+          <div class="photo_con">
+            <a href="{% url 'reser_date' %}">
+            <img class="photo_img" src="../../static/img/GB.jpg" alt="" />
+            </a>
+            <div class="photo_des">
+              <h3>경복궁</h3>
+              <p>서울특별시 종로구 사직로 161</p>
+              </p>
+            </div>
+            <div class="black"></div>
+          </div>
+          <div class="photo_con">
+            <a href="{% url 'reser_date' %}">
+              <img class="photo_img" src="../../static/img/SAN.jpg" alt="" />
+            </a>
+            <div class="photo_des">
+              <h3>무슨산</h3>
+              <p>어디여ㅋㅋ</p>
+            </div>
+            <div class="black"></div>
+          </div>
+        </div>
 
-      <footer></footer>
-    </div>
-    <script src="../../static/js/reservation.js"></script>
-  </body>
+      </div>
+    </main>
+
+    <footer></footer>
+  </div>
+  <script src="../../static/js/reservation.js"></script>
+</body>
+
 </html>
