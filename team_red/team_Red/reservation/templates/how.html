@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
   </head>
   <body>
     <div id="container">
@@ -16,19 +16,24 @@
           <div id="navContainer">
             <div id="nav_Logo">
               <img
-                src="{% static 'img/logo.png' %}"
+                src="../../static/img/logo.png"
                 alt="logo"
                 width="50px"
                 height="50px"
               />
             </div>
             <div id="nav_name">
-              <h1>체크</h1>
+              <h1>LAIN</h1>
             </div>
           </div>
         </nav>
       </header>
+      <div class="howInput">
+        <h1>몇 명이 가시나요?</h1>
+        <input type="number" />
+      </div>
+      <a href="success.html"><button>다음</button></a>
     </div>
-    <script src="{% static 'js/app.js' %}"></script>
+    <script src="../../static/js/app.js"></script>
   </body>
 </html>

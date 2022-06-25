@@ -4,7 +4,18 @@ from .forms import ReservationForm
 from django.contrib import auth
 from django.contrib.auth.models import User
 
-# Create your views here.
+#회원 가입 페이지
+def signup(request):
+    if request.method == "POST":
+        if request.POST['password'] == request.POST['repeat']:
+            # 회원가입
+            new_user = User.objects.create_user(username=request.POST['username'], password=request.POST['password'])
+            # 로그인
+            auth.login(request, new_user)
+            # 홈 리다이렉션
+            return redirect('index')
+    return render(request, 'sign.html')
+
 # 메인 페이지
 def mainpage(request):
     # TODO
@@ -42,8 +53,8 @@ def choose_num(request):
     if request.method == "POST":
         return redirect('reservation_done')
     else:
-        return render(request, 'how.html')
+        return render(request, 'when')
 
 # 예약 완료 페이지
 def reservation_done(request):
-    return render(request, 'success.html')
+    return render(request, 'success')
