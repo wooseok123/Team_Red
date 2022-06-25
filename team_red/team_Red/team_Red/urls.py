@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from reservation import views as res_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', res_views.mainpage),
+    path('reservation/', res_views.choose_place),
+    path('reservation/date', res_views.choose_date),
+    path('reservation/done', res_views.reservation_done),
 ]
